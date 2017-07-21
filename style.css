@@ -1,0 +1,100 @@
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite,
+code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5,
+h6, header, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre,
+q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time,
+tr, tt, u, ul, var, video {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'PT Mono', monospace;
+}
+
+
+h1 { font-size: 2.074em;}
+
+h2 { font-size: 1.728em; }
+
+h3 { font-size: 1.44em; }
+
+h4 { font-size: 1.2em; }
+
+small { font-size: 0.833em; }
+
+
+body {
+    padding-top: 12em;
+}
+
+#quoteBox {
+    background-color: #F5F5F5;
+    border-radius: 0.2em;
+    width: 40em;
+    box-shadow:
+            -5px -4px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 1em;
+    border: 0.1em solid black;
+
+
+}
+
+/*QUOTE SYMBOLS*/
+#quoteText:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+#quoteText {
+    padding-top: 2em;
+    color: #000;
+}
+
+#quoteText:after {
+    color: #ccc;
+    content: close-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    vertical-align: -0.6em;
+    margin-left: 0.10em;
+}
+
+
+#quoteAuthor {
+    padding: 0.5em 3em 2em 0.1em;
+    text-align: right;
+}
+
+#buttons button {
+
+    float: right;
+
+}
+
+#twit {
+    float: left;
+}
+
+
+/*PHONES*/
+
+@media only screen and (max-width: 768px) {
+
+
+    body {
+        padding-top: 8em;
+    }
+
+    #quoteText:before {
+        font-size: 2em;
+    }
+
+    #quoteText:after {
+        font-size: 2em;
+    }
+}
